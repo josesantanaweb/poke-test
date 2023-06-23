@@ -15,17 +15,30 @@ const LoginPage = () => {
   const [email, setEmail] = useState("")
   const [password, setPassword] = useState("")
   const [passwordShown, setPasswordShown] = useState(false);
+  const [isError, setIsError] = useState(false);
 
   const handleSubmit = async () => {
     if (email === "jonhdoe@gmail.com" && password === "12345") {
       setToken(token);
+      navigate("/");
+    } else {
+      setIsError(true)
+      setTimeout(() => {
+        setIsError(false)
+        setEmail("")
+        setPassword("")
+      }, 2000);
     }
-    navigate("/");
   };
 
 
   return (
     <S.Login>
+      <S.LoginCredentials>
+        <S.LoginCredentialsLabel>Credenciales:</S.LoginCredentialsLabel>
+        <S.LoginCredentialsValue>jonhdoe@gmail.com</S.LoginCredentialsValue>
+        <S.LoginCredentialsValue>12345</S.LoginCredentialsValue>
+      </S.LoginCredentials>
       <S.LoginCard>
         <S.LoginTop>
           <S.LoginLogo src={Logo} alt="logo" />
@@ -55,6 +68,7 @@ const LoginPage = () => {
           <Button label="Login" onClick={handleSubmit} />
         </S.LoginFooter>
       </S.LoginCard>
+      {isError && <S.Alert>Credenciales Invalidas!</S.Alert>}
     </S.Login>
   );
 };

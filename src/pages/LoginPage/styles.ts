@@ -4,11 +4,32 @@ interface Props {
   darkTheme?: boolean;
 }
 
+export const LoginCredentials = styled.div`
+  width: 100%;
+  max-width: 350px;
+  margin-bottom: 2rem;
+  display: flex;
+  opacity: 0.5;
+`;
+
+export const LoginCredentialsLabel = styled.h6`
+  font-size: ${({ theme }) => theme.fontSize.md};
+  color: ${({ theme }) => theme.colors.gray[30]};
+  margin-right: 1rem;
+`;
+
+export const LoginCredentialsValue = styled.h6`
+  font-size: ${({ theme }) => theme.fontSize.md};
+  color: ${({ theme }) => theme.colors.black};
+  margin-right: 1rem;
+`;
+
 export const Login = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
   height: 100vh;
+  flex-direction: column;
 `;
 
 export const LoginCard = styled.div<Props>`
@@ -71,5 +92,15 @@ export const LoginIcon = styled.div`
 
 export const LoginFooter = styled.div`
   width: 100%;
+`;
+
+export const Alert = styled.div`
+  width: 100%;
+  background-color: #f36060;
+  color: ${({ theme }) => theme.colors.white};
+  border-radius: 4px;
+  width: 300px;
+  margin-top: 2rem;
+  padding: 1rem;
 `;
 
