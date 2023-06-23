@@ -1,0 +1,102 @@
+[
+  {
+    "id": 1,
+    "name": "bulbasaur",
+    "abilities": [
+      {
+        "ability": {
+          "name": "overgrow"
+        }
+      },
+      {
+        "ability": {
+          "name": "chlorophyll"
+        }
+      }
+    ],
+    "weight": "69",
+    "sprites": {
+      "other": {
+        "home": {
+          "front_default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/1.png"
+        }
+      }
+    },
+    "stats": [
+      {
+        "base_stat": 45,
+        "stat": {
+          "name": "hp"
+        }
+      },
+      {
+        "base_stat": 49,
+        "stat": {
+          "name": "attack"
+        }
+      },
+      {
+        "base_stat": 49,
+        "stat": {
+          "name": "defense"
+        }
+      },
+      {
+        "base_stat": 45,
+        "stat": {
+          "name": "speed"
+        }
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "name": "bulbasaur",
+    "abilities": [
+      {
+        "ability": {
+          "name": "overgrow"
+        }
+      },
+      {
+        "ability": {
+          "name": "chlorophyll"
+        }
+      }
+    ],
+    "weight": "69",
+    "sprites": {
+      "other": {
+        "home": {
+          "front_default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/1.png"
+        }
+      }
+    },
+    "stats": [
+      {
+        "base_stat": 45,
+        "stat": {
+          "name": "hp"
+        }
+      },
+      {
+        "base_stat": 49,
+        "stat": {
+          "name": "attack"
+        }
+      },
+      {
+        "base_stat": 49,
+        "stat": {
+          "name": "defense"
+        }
+      },
+      {
+        "base_stat": 45,
+        "stat": {
+          "name": "speed"
+        }
+      }
+    ]
+  }
+]
