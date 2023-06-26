@@ -18,7 +18,7 @@ const Pokemon = (props: PokemonProps) => {
   };
 
   return (
-    <S.Pokemon darkTheme={darkTheme}>
+    <S.Pokemon darkTheme={darkTheme} className="pokemon">
       <S.Preview>
         <S.Imagen
           src={pokemon?.sprites.other.dream_world.front_default}
@@ -26,7 +26,9 @@ const Pokemon = (props: PokemonProps) => {
         />
         <S.Weight>Peso: {pokemon?.weight}</S.Weight>
       </S.Preview>
-      <S.Name darkTheme={darkTheme}>{pokemon?.name}</S.Name>
+      <S.Name darkTheme={darkTheme} className="pokemon-name">
+        {pokemon?.name}
+      </S.Name>
       <S.Abilities>
         {pokemon?.abilities[0] && (
           <S.Ability>{pokemon?.abilities[0].ability.name}</S.Ability>

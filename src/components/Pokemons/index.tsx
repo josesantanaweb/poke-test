@@ -73,7 +73,10 @@ const Pokemons = () => {
         >
           <BiChevronLeft size={24} />
         </S.PaginateButton>
-        <S.PaginateButton onClick={() => setOffset(offset + 12)}>
+        <S.PaginateButton
+          onClick={() => setOffset(offset + 12)}
+          className="button-next"
+        >
           <BiChevronRight size={30} />
         </S.PaginateButton>
       </S.Paginate>

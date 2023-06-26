@@ -10,7 +10,7 @@ const TopSection = (props: TopSectionProps) => {
   const darkTheme = useStore((state) => state.darkTheme);
   return (
     <S.TopSection>
-      <S.Title darkTheme={darkTheme}>{title}</S.Title>
+      <S.Title darkTheme={darkTheme} className="list-title">{title}</S.Title>
     </S.TopSection>
   );
 };

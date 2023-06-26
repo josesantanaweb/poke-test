@@ -49,6 +49,7 @@ const LoginPage = () => {
             placeholder="Email"
             type="text"
             onChange={(e) => setEmail(e.target.value)}
+            className="email"
           />
         </S.LoginInputWrapper>
         <S.LoginInputWrapper>
@@ -56,6 +57,7 @@ const LoginPage = () => {
             placeholder="Password"
             type={passwordShown ? "text" : "password"}
             onChange={(e) => setPassword(e.target.value)}
+            className="password"
           />
           <S.LoginIcon>
             <BiTargetLock
@@ -65,10 +67,16 @@ const LoginPage = () => {
           </S.LoginIcon>
         </S.LoginInputWrapper>
         <S.LoginFooter>
-          <Button label="Login" onClick={handleSubmit} />
+          <Button
+            label="Login"
+            onClick={handleSubmit}
+            className="button-login"
+          />
         </S.LoginFooter>
       </S.LoginCard>
-      {isError && <S.Alert>Credenciales Invalidas!</S.Alert>}
+      {isError && (
+        <S.Alert className="alert">Credenciales Invalidas!</S.Alert>
+      )}
     </S.Login>
   );
 };

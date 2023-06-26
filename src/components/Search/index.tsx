@@ -11,7 +11,7 @@ const Search = () => {
 
   return (
     <S.Search>
-      <S.SearchInput type="text" placeholder="Buscar..." onChange={onChange}/>
+      <S.SearchInput type="text" placeholder="Buscar..." onChange={onChange} className="search"/>
       <S.SearchIcon>
         <BiSearch size={20} />
       </S.SearchIcon>
